@@ -1,0 +1,64 @@
+{
+  "page": "projects",
+  "version": 1,
+  "intro": {
+    "title": "Featured",
+    "highlight": "Projects",
+    "subtitle": "Academic and personal initiatives that showcase skills and passion."
+  },
+  "cta": {
+    "label": "View All Projects on GitHub",
+    "href": "https://github.com/youruser?tab=repositories",
+    "icon": "github"
+  },
+  "cards": [
+    {
+      "id": "maze-pathfinder",
+      "title": "Maze Pathfinding Game",
+      "subtitle": "Java Programming Project",
+      "year": 2025,
+      "description": "A Java-based maze exploration program that models each room as a connected node and uses recursive graph backtracking to explore every possible path and dead-end. Highlights algorithm design, control flow, and OOP.",
+      "tags": ["Java", "Recursion", "Graph Traversal", "Backtracking", "OOP", "Algorithms"],
+      "links": {
+        "repo": "https://github.com/youruser/maze-pathfinder",
+        "demo": ""
+      }
+    },
+    {
+      "id": "student-records-cli",
+      "title": "Student Records Manager",
+      "subtitle": "Java File I/O Project",
+      "year": 2025,
+      "description": "Console app that manages student records using structured file input/output and buffered streams. Implements robust exception handling and data validation, applying core OOP principles to manage domain entities.",
+      "tags": ["Java", "File I/O", "Buffered Streams", "Exception Handling", "Data Validation", "OOP"],
+      "links": {
+        "repo": "https://github.com/youruser/student-records-cli",
+        "demo": ""
+      }
+    },
+    {
+      "id": "ecommerce-exceptions",
+      "title": "E-commerce System with Custom Exceptions",
+      "subtitle": "Advanced Java OOP Project",
+      "year": 2025,
+      "description": "Interactive shopping simulation showcasing encapsulated classes for products and carts, plus custom exceptions for invalid states (empty carts, insufficient balance). Emphasizes clean class architecture and reusable logic.",
+      "tags": ["Java", "Custom Exceptions", "Collections", "Error Handling", "Encapsulation", "OOP"],
+      "links": {
+        "repo": "https://github.com/youruser/ecommerce-exceptions",
+        "demo": ""
+      }
+    },
+    {
+      "id": "pet-adoption-site",
+      "title": "Pet Adoption Website",
+      "subtitle": "SOEN 287 Web Development Project",
+      "year": 2025,
+      "description": "Responsive web app where users filter and browse adoptable pets. Built with HTML/CSS/JavaScript (ES6) for the frontend and a lightweight Node.js/Express backend for routing and form handling. Includes client-side validation and dynamic filtering.",
+      "tags": ["HTML", "CSS", "JavaScript", "Node.js", "Express", "Responsive Design"],
+      "links": {
+        "repo": "https://github.com/youruser/pet-adoption-site",
+        "demo": "https://pet-adoption.example.com"
+      }
+    }
+  ]
+}

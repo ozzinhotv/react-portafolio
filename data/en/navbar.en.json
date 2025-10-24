@@ -1,0 +1,24 @@
+{
+  "page": "navbar",
+  "version": 1,
+  "brand": { "text": "OTV", "href": "/" },
+  "items": [
+    { "id": "home",        "label": "Home",       "href": "/en" },
+    { "id": "skills",      "label": "Skills",     "href": "/en/skills" },
+    { "id": "education",   "label": "Education",  "href": "/en/education" },
+    { "id": "projects",    "label": "Projects",   "href": "/en/projects" },
+    { "id": "experience",  "label": "Experience", "href": "/en/experience" },
+    { "id": "contact",     "label": "Contact",    "href": "/en/contact" }
+  ],
+  "utilities": {
+    "locale": {
+      "type": "locale-switcher",
+      "current": "en",
+      "options": [
+        { "code": "es", "label": "ES", "href": "/es" },
+        { "code": "en", "label": "EN", "href": "/en" }
+      ]
+    },
+    "theme": { "type": "theme-toggle", "icons": { "light": "sun", "dark": "moon" } }
+  }
+}

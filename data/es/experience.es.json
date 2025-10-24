@@ -1,0 +1,104 @@
+[  
+  {
+    "id": "andromeda-2021",
+    "role": "Developer Trainee",
+    "company": "Andromeda Ventures",
+    "location": "Caracas, VE",
+    "start": "2025-01",
+    "end": "2025-10",
+    "current": false,
+    "logo": "/logos/andromeda.webp",
+    "tasks": [
+      "Análisis financiero y monitoreo de proyectos.",
+      "Soporte en reportes y métricas clave de desempeño.",
+      "Colaboración con equipos cross-funcionales."
+    ],
+    "skills": ["Excel", "KPIs", "Reporting", "Análisis Financiero"]
+  },
+
+  {
+    "id": "stellar-2019",
+    "role": "Junior Financial Analyst",
+    "company": "Stellar Investments",
+    "location": "Caracas, VE",
+    "start": "2019-06",
+    "end": "2021-02",
+    "current": false,
+    "logo": "/logos/stellar.webp",
+    "tasks": [
+      "Apoyo en la elaboración de presupuestos y previsiones financieras.",
+      "Análisis de datos financieros para identificar tendencias.",
+      "Preparación de informes financieros para la alta dirección."
+    ],
+    "skills": ["Análisis de Datos", "Presupuestos", "Previsiones", "Informes Financieros"]
+  },
+
+  {
+    "id": "stellar-2019",
+    "role": "Junior Financial Analyst",
+    "company": "Stellar Investments",
+    "location": "Caracas, VE",
+    "start": "2019-06",
+    "end": "2021-02",
+    "current": false,
+    "logo": "/logos/stellar.webp",
+    "tasks": [
+      "Apoyo en la elaboración de presupuestos y previsiones financieras.",
+      "Análisis de datos financieros para identificar tendencias.",
+      "Preparación de informes financieros para la alta dirección."
+    ],
+    "skills": ["Análisis de Datos", "Presupuestos", "Previsiones", "Informes Financieros"]
+  },
+
+  {
+    "id": "stellar-2019",
+    "role": "Junior Financial Analyst",
+    "company": "Stellar Investments",
+    "location": "Caracas, VE",
+    "start": "2019-06",
+    "end": "2021-02",
+    "current": false,
+    "logo": "/logos/stellar.webp",
+    "tasks": [
+      "Apoyo en la elaboración de presupuestos y previsiones financieras.",
+      "Análisis de datos financieros para identificar tendencias.",
+      "Preparación de informes financieros para la alta dirección."
+    ],
+    "skills": ["Análisis de Datos", "Presupuestos", "Previsiones", "Informes Financieros"]
+  },
+
+  {
+    "id": "stellar-2019",
+    "role": "Junior Financial Analyst",
+    "company": "Stellar Investments",
+    "location": "Caracas, VE",
+    "start": "2019-06",
+    "end": "2021-02",
+    "current": false,
+    "logo": "/logos/stellar.webp",
+    "tasks": [
+      "Apoyo en la elaboración de presupuestos y previsiones financieras.",
+      "Análisis de datos financieros para identificar tendencias.",
+      "Preparación de informes financieros para la alta dirección."
+    ],
+    "skills": ["Análisis de Datos", "Presupuestos", "Previsiones", "Informes Financieros"]
+  },
+
+  {
+    "id": "stellar-2019",
+    "role": "Junior Financial Analyst",
+    "company": "Stellar Investments",
+    "location": "Caracas, VE",
+    "start": "2019-06",
+    "end": "2021-02",
+    "current": false,
+    "logo": "/logos/stellar.webp",
+    "tasks": [
+      "Apoyo en la elaboración de presupuestos y previsiones financieras.",
+      "Análisis de datos financieros para identificar tendencias.",
+      "Preparación de informes financieros para la alta dirección."
+    ],
+    "skills": ["Análisis de Datos", "Presupuestos", "Previsiones", "Informes Financieros"]
+  }
+  
+]

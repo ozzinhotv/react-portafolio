@@ -1,0 +1,38 @@
+[
+
+  {
+    "id": "stellar-2019",
+    "role": "Junior Financial Analyst",
+    "company": "Stellar Investments",
+    "location": "Caracas, VE",
+    "start": "2019-06",
+    "end": "2021-02",
+    "current": false,
+    "logo": "/logos/stellar.webp",
+    "skills": ["Análisis de Datos", "Presupuestos", "Previsiones", "Informes Financieros"]
+  },
+
+  {
+    "id": "stellar-2019",
+    "role": "Junior Financial Analyst",
+    "company": "Stellar Investments",
+    "location": "Caracas, VE",
+    "start": "2019-06",
+    "end": "2021-02",
+    "current": false,
+    "logo": "/logos/stellar.webp",
+    "skills": ["Análisis de Datos", "Presupuestos", "Previsiones", "Informes Financieros"]
+  },
+
+  {
+    "id": "stellar-2019",
+    "role": "Junior Financial Analyst",
+    "company": "Stellar Investments",
+    "location": "Caracas, VE",
+    "start": "2019-06",
+    "end": "2021-02",
+    "current": false,
+    "logo": "/logos/stellar.webp",
+    "skills": ["Análisis de Datos", "Presupuestos", "Previsiones", "Informes Financieros"]
+  }
+]

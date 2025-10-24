@@ -1,0 +1,33 @@
+{
+  "page": "home",
+  "version": 1,
+  "hero": {
+    "avatar": {
+      "src": "/avatar.jpg",
+      "alt": "Foto de perfil",
+      "shape": "circle"
+    },
+    "heading": {
+      "greeting": "Hola, soy",
+      "name": {
+        "first": "Tu",
+        "last": "Nombre",
+        "highlight": true,
+        "highlightColor": "blue"
+      }
+    },
+    "role": "Desarrollador Frontend",
+    "description": "Apasionado por crear aplicaciones web innovadoras y eficientes. Enfocado en React/Next.js, Angular y performance.",
+    "actions": [
+      { "id": "contact", "label": "Contáctame", "href": "/contacto", "variant": "primary", "icon": "arrow-right" },
+      { "id": "projects", "label": "Ver Proyectos", "href": "/proyectos", "variant": "secondary", "icon": "grid" },
+      { "id": "cv-preview", "label": "Vista Previa del CV", "href": "/cv", "variant": "ghost", "icon": "eye" },
+      { "id": "cv-download", "label": "Descargar", "href": "/cv/tu-nombre.pdf", "variant": "outline", "icon": "download" }
+    ],
+    "social": [
+      { "id": "linkedin", "label": "LinkedIn", "href": "https://www.linkedin.com/in/tu-perfil", "icon": "linkedin" },
+      { "id": "github", "label": "GitHub", "href": "https://github.com/tuusuario", "icon": "github" },
+      { "id": "email", "label": "Email", "href": "mailto:tucorreo@ejemplo.com", "icon": "mail" }
+    ]
+  }
+}

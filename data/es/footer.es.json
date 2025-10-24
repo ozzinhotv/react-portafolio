@@ -1,0 +1,17 @@
+{
+  "page": "footer",
+  "version": 1,
+  "locale": "es",
+  "ownerName": "Oscar Thielen",
+  "copyright": "© {year} Oscar Thielen. Todos los derechos reservados.",
+  "links": [
+    { "id": "privacy", "label": "Privacidad", "href": "/es/privacidad" },
+    { "id": "terms",   "label": "Términos",   "href": "/es/terminos" }
+  ],
+  "social": [
+    { "id": "linkedin", "label": "LinkedIn", "href": "https://www.linkedin.com/in/tu-perfil", "icon": "linkedin" },
+    { "id": "github",   "label": "GitHub",   "href": "https://github.com/tuusuario",          "icon": "github" },
+    { "id": "email",    "label": "Correo",   "href": "mailto:tucorreo@ejemplo.com",           "icon": "mail" },
+    { "id": "instagram","label": "Instagram","href": "https://instagram.com/tuusuario",       "icon": "instagram" }
+  ]
+}

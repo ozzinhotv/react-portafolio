@@ -1,0 +1,43 @@
+{
+  "page": "contact",
+  "version": 1,
+  "locale": "en",
+  "intro": {
+    "title": "Get in",
+    "highlight": "Touch",
+    "subtitle": "I'm always open to discuss new opportunities and collaborations."
+  },
+  "cards": [
+    {
+      "id": "email",
+      "title": "Email",
+      "icon": "mail",
+      "value": "you@example.com",
+      "href": "mailto:you@example.com"
+    },
+    {
+      "id": "linkedin",
+      "title": "LinkedIn",
+      "icon": "linkedin",
+      "value": "linkedin.com/in/your-profile",
+      "href": "https://www.linkedin.com/in/your-profile"
+    },
+    {
+      "id": "location",
+      "title": "Location",
+      "icon": "map-pin",
+      "value": "Miami, FL, USA"
+    }
+  ],
+  "cta": {
+    "label": "Send me a Message",
+    "icon": "arrow-right",
+    "href": "/en/contact" 
+  },
+  "social": [
+    { "id": "linkedin", "icon": "linkedin", "href": "https://www.linkedin.com/in/your-profile" },
+    { "id": "github", "icon": "github", "href": "https://github.com/youruser" },
+    { "id": "email", "icon": "mail", "href": "mailto:you@example.com" },
+    { "id": "instagram", "icon": "instagram", "href": "https://instagram.com/youruser" }
+  ]
+}
