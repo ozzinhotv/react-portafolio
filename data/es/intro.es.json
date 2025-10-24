@@ -10,8 +10,8 @@
     "heading": {
       "greeting": "Hola, soy",
       "name": {
-        "first": "Tu",
-        "last": "Nombre",
+        "first": "Oscar",
+        "last": "Thielen",
         "highlight": true,
         "highlightColor": "blue"
       }

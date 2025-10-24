@@ -5,9 +5,9 @@
   "items": [
     { "id": "home",        "label": "Home",       "href": "/en" },
     { "id": "skills",      "label": "Skills",     "href": "/en/skills" },
-    { "id": "education",   "label": "Education",  "href": "/en/education" },
-    { "id": "projects",    "label": "Projects",   "href": "/en/projects" },
     { "id": "experience",  "label": "Experience", "href": "/en/experience" },
+    { "id": "projects",    "label": "Projects",   "href": "/en/projects" },
+    { "id": "education",   "label": "Education",  "href": "/en/education" },
     { "id": "contact",     "label": "Contact",    "href": "/en/contact" }
   ],
   "utilities": {

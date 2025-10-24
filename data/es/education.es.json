@@ -1,38 +1,49 @@
 [
-
   {
-    "id": "stellar-2019",
-    "role": "Junior Financial Analyst",
-    "company": "Stellar Investments",
-    "location": "Caracas, VE",
-    "start": "2019-06",
-    "end": "2021-02",
-    "current": false,
-    "logo": "/logos/stellar.webp",
-    "skills": ["Análisis de Datos", "Presupuestos", "Previsiones", "Informes Financieros"]
+    "id": "edu-3",
+    "degree": "Ingeniería de Software (B.Eng.)",
+    "institution": "Concordia University",
+    "location": "Montreal, CA",
+    "start": "2024-09",
+    "current": true,
+    "logo": "/logos/concordia.webp",
+    "highlights": [
+      "Fundamentos de arquitectura de software y patrones.",
+      "Estructuras de datos y algoritmos.",
+      "Proyecto integrador con énfasis en colaboración y control de versiones."
+    ],
+    "skills": ["Algoritmos", "Estructuras de Datos", "Diseño de Software", "Git/GitHub"]
   },
-
   {
-    "id": "stellar-2019",
-    "role": "Junior Financial Analyst",
-    "company": "Stellar Investments",
-    "location": "Caracas, VE",
-    "start": "2019-06",
-    "end": "2021-02",
+    "id": "edu-2",
+    "degree": "Diplomado en Desarrollo Web",
+    "institution": "Programa Profesional",
+    "location": "Remoto",
+    "start": "2023-03",
+    "end": "2023-10",
     "current": false,
-    "logo": "/logos/stellar.webp",
-    "skills": ["Análisis de Datos", "Presupuestos", "Previsiones", "Informes Financieros"]
+    "logo": "/logos/webdev.webp",
+    "highlights": [
+      "Maquetación semántica con HTML5/CSS3 y responsive design.",
+      "SPA con React y enrutamiento básico.",
+      "Buenas prácticas: ESLint, Prettier y testing de componentes."
+    ],
+    "skills": ["HTML5", "CSS3", "React", "Responsive Design", "Testing"]
   },
-
   {
-    "id": "stellar-2019",
-    "role": "Junior Financial Analyst",
-    "company": "Stellar Investments",
-    "location": "Caracas, VE",
-    "start": "2019-06",
-    "end": "2021-02",
+    "id": "edu-1",
+    "degree": "Curso de Java Orientado a Objetos",
+    "institution": "Formación Online",
+    "location": "Remoto",
+    "start": "2022-05",
+    "end": "2022-08",
     "current": false,
-    "logo": "/logos/stellar.webp",
-    "skills": ["Análisis de Datos", "Presupuestos", "Previsiones", "Informes Financieros"]
+    "logo": "/logos/java.webp",
+    "highlights": [
+      "POO: clases, herencia, polimorfismo y encapsulación.",
+      "Manejo de archivos y excepciones.",
+      "Mini-proyecto: gestor de registros por consola."
+    ],
+    "skills": ["Java", "POO", "File I/O", "Excepciones"]
   }
 ]
