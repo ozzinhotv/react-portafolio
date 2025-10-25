@@ -1,20 +1,21 @@
 {
   "page": "skills",
-  "version": 1,
+  "version": 2,
   "cards": [
     {
       "id": "programming-web",
       "title": "Programming & Web Development",
       "type": "badges",
       "items": [
-        { "label": "TypeScript", "icon": "typescript" },
-        { "label": "JavaScript", "icon": "javascript" },
-        { "label": "React", "icon": "react" },
-        { "label": "Next.js", "icon": "nextjs" },
-        { "label": "Angular", "icon": "angular" },
-        { "label": "HTML5", "icon": "html5" },
-        { "label": "CSS3", "icon": "css3" },
-        { "label": "Tailwind CSS", "icon": "tailwind" }
+        { "label": "TypeScript",  "icon": "typescript" },
+        { "label": "JavaScript",  "icon": "javascript" },
+        { "label": "HTML5",       "icon": "html5" },
+        { "label": "CSS3",        "icon": "css3" },
+        { "label": "React",       "icon": "react" },
+        { "label": "Angular",     "icon": "angular" },
+        { "label": "Next.js",     "icon": "nextdotjs" },
+        { "label": "Tailwind CSS","icon": "tailwindcss" },
+        { "label": "Bootstrap",   "icon": "bootstrap" }
       ]
     },
     {
@@ -22,36 +23,39 @@
       "title": "Development Tools & Frameworks",
       "type": "badges",
       "items": [
-        { "label": "Node.js", "icon": "nodejs" },
+        { "label": "Node.js",      "icon": "nodedotjs" },
         { "label": "Git & GitHub", "icon": "github" },
-        { "label": "VS Code", "icon": "vscode" },
-        { "label": "Vite", "icon": "vite" },
-        { "label": "ESLint", "icon": "eslint" },
-        { "label": "Prettier", "icon": "prettier" },
-        { "label": "Vitest / RTL", "icon": "vitest" }
+        { "label": "VS Code",      "icon": "visualstudiocode" },
+        { "label": "Vite",         "icon": "vite" },
+        { "label": "Vercel",       "icon": "vercel" }
       ]
     },
     {
-      "id": "os-platforms",
-      "title": "Operating Systems & Platforms",
+      "id": "office-productivity",
+      "title": "Office & Productivity",
       "type": "badges",
       "items": [
-        { "label": "Linux", "icon": "linux" },
-        { "label": "Windows", "icon": "windows" },
-        { "label": "macOS", "icon": "macos" },
-        { "label": "Vercel", "icon": "vercel" },
-        { "label": "Netlify", "icon": "netlify" }
+        { "label": "Microsoft Office", "icon": "microsoftoffice" },
+        { "label": "Word",             "icon": "microsoftword" },
+        { "label": "Excel",            "icon": "microsoftexcel" },
+        { "label": "PowerPoint",       "icon": "microsoftpowerpoint" },
+        { "label": "Google Drive",     "icon": "googledrive" },
+        { "label": "Gmail",            "icon": "gmail" },
+        { "label": "Google Calendar",  "icon": "googlecalendar" },
+        { "label": "Google Meet",      "icon": "googlemeet" },
+        { "label": "ClickUp",          "icon": "clickup" },
+        { "label": "Zoom",             "icon": "zoom" }
       ]
     },
     {
-      "id": "currently-learning",
-      "title": "Currently Learning",
+      "id": "design-pm-tools",
+      "title": "Design & PM Tools",
       "type": "badges",
       "items": [
-        { "label": "C", "icon": "c" },
-        { "label": "Python", "icon": "python" },
-        { "label": "Go", "icon": "go" },
-        { "label": "tRPC", "icon": "trpc" }
+        { "label": "Figma",  "icon": "figma" },
+        { "label": "Canva",  "icon": "canva" },
+        { "label": "Trello", "icon": "trello" },
+        { "label": "Notion", "icon": "notion" }
       ]
     },
     {
@@ -59,24 +63,8 @@
       "title": "Languages",
       "type": "languages",
       "items": [
-        {
-          "label": "Spanish",
-          "code": "es",
-          "level": "Native speaker",
-          "proficiency": 100
-        },
-        {
-          "label": "English",
-          "code": "en",
-          "level": "Fluent · professional",
-          "proficiency": 85
-        },
-        {
-          "label": "French",
-          "code": "fr",
-          "level": "Beginner",
-          "proficiency": 30
-        }
+        { "label": "Spanish", "code": "es", "level": "Native speaker", "proficiency": 100 },
+        { "label": "English", "code": "en", "level": "Fluent · professional", "proficiency": 85 }
       ]
     }
   ]

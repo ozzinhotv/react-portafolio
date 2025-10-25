@@ -13,51 +13,137 @@
   },
   "cards": [
     {
-      "id": "maze-pathfinder",
-      "title": "Maze Pathfinding Game",
-      "subtitle": "Java Programming Project",
+      "id": "portfolio-site",
+      "icon": "app-window",
+      "title": "Personal Portfolio",
+      "subtitle": "Next.js • TypeScript • Tailwind CSS",
       "year": 2025,
-      "description": "A Java-based maze exploration program that models each room as a connected node and uses recursive graph backtracking to explore every possible path and dead-end. Highlights algorithm design, control flow, and OOP.",
-      "tags": ["Java", "Recursion", "Graph Traversal", "Backtracking", "OOP", "Algorithms"],
+      "description": "Personal portfolio that centralizes my experience and skills. Built with Next.js (App Router), hybrid rendering (SSR/ISR), i18n via cookies, Tailwind styling, Iconify & Lucide icon system, and JSON-driven sections (Skills, About, Projects, Contact). Includes accessible components, a glass UI aesthetic, and icon mapping per section and per tag.",
+      "tags": [
+        { "label": "Next.js", "icon": "nextdotjs" },
+        { "label": "React", "icon": "react" },
+        { "label": "TypeScript", "icon": "typescript" },
+        { "label": "Tailwind CSS", "icon": "tailwindcss" },
+        { "label": "Node.js", "icon": "nodedotjs" },
+        { "label": "Vercel", "icon": "vercel" },
+        { "label": "GitHub", "icon": "github" }
+      ],
       "links": {
-        "repo": "https://github.com/youruser/maze-pathfinder",
-        "demo": ""
+        "repo": "https://github.com/youruser/portfolio",
+        "demo": "https://your-portfolio.vercel.app"
       }
     },
     {
-      "id": "student-records-cli",
-      "title": "Student Records Manager",
-      "subtitle": "Java File I/O Project",
+      "id": "fundacion-villanueva",
+      "icon": "globe",
+      "title": "Fundación Villanueva — Website & Digital Archive",
+      "subtitle": "Angular • TypeScript • Tailwind CSS",
       "year": 2025,
-      "description": "Console app that manages student records using structured file input/output and buffered streams. Implements robust exception handling and data validation, applying core OOP principles to manage domain entities.",
-      "tags": ["Java", "File I/O", "Buffered Streams", "Exception Handling", "Data Validation", "OOP"],
+      "description": "Website for Fundación Villanueva featuring Archive, Works, and Life sections. Built with Next.js (App Router), Tailwind styling, Iconify/Lucide icon system, and JSON-driven content. Includes responsive grids, accessibility, and a cohesive glass UI consistent with the portfolio.",
+      "tags": [
+        { "label": "Angular",      "icon": "angular" },
+        { "label": "TypeScript", "icon": "typescript" },
+        { "label": "Tailwind CSS", "icon": "tailwindcss" },
+        { "label": "Next.js", "icon": "nextdotjs" },
+        { "label": "Node.js", "icon": "nodedotjs" },
+        { "label": "Vercel", "icon": "vercel" },
+        { "label": "GitHub", "icon": "github" },
+        { "label": "Diseño responsivo", "icon": "responsive-design" }
+      ],
       "links": {
-        "repo": "https://github.com/youruser/student-records-cli",
-        "demo": ""
+        "repo": "https://github.com/youruser/fundacion-villanueva",
+        "demo": "https://fundacion-villanueva.example.com"
       }
     },
     {
-      "id": "ecommerce-exceptions",
-      "title": "E-commerce System with Custom Exceptions",
-      "subtitle": "Advanced Java OOP Project",
+      "id": "universidad-andromeda",
+      "icon": "rocket",
+      "title": "Universidad Andrómeda — Internship Program Landing (Proposal)",
+      "subtitle": "Angular • Tailwind CSS",
       "year": 2025,
-      "description": "Interactive shopping simulation showcasing encapsulated classes for products and carts, plus custom exceptions for invalid states (empty carts, insufficient balance). Emphasizes clean class architecture and reusable logic.",
-      "tags": ["Java", "Custom Exceptions", "Collections", "Error Handling", "Encapsulation", "OOP"],
+      "description": "Landing page created as a proposal for Andromeda Ventures: an entry portal to the internship program highlighting benefits and content. Functional prototype built with Angular, styled with Tailwind, suggested deployment on Vercel, and versioned on GitHub. Fully responsive with basic Node.js support.",
+      "tags": [
+        { "label": "Angular", "icon": "angular" },
+        { "label": "Tailwind CSS", "icon": "tailwindcss" },
+        { "label": "GitHub", "icon": "github" },
+        { "label": "Vercel", "icon": "vercel" },
+        { "label": "Responsive Design", "icon": "responsive-design" },
+        { "label": "Node.js", "icon": "nodedotjs" }
+      ],
       "links": {
-        "repo": "https://github.com/youruser/ecommerce-exceptions",
-        "demo": ""
+        "repo": "https://github.com/youruser/universidad-andromeda",
+        "demo": "https://universidad-andromeda.example.com"
       }
     },
     {
-      "id": "pet-adoption-site",
-      "title": "Pet Adoption Website",
-      "subtitle": "SOEN 287 Web Development Project",
+      "id": "bacha",
+      "icon": "gamepad",
+      "title": "Bacha — Card Game Scoreboard",
+      "subtitle": "Angular • Tailwind CSS",
       "year": 2025,
-      "description": "Responsive web app where users filter and browse adoptable pets. Built with HTML/CSS/JavaScript (ES6) for the frontend and a lightweight Node.js/Express backend for routing and form handling. Includes client-side validation and dynamic filtering.",
-      "tags": ["HTML", "CSS", "JavaScript", "Node.js", "Express", "Responsive Design"],
+      "description": "Personal project that emulates the Bacha card game's scoreboard to simplify score tracking during matches. I keep iterating with new features. The long-term goal is to turn it into a full online Bacha app to play with friends, including rooms, rules, and rankings.",
+      "tags": [
+        { "label": "Angular", "icon": "angular" },
+        { "label": "Tailwind CSS", "icon": "tailwindcss" },
+        { "label": "Node.js", "icon": "nodedotjs" },
+        { "label": "GitHub", "icon": "github" },
+        { "label": "Vercel", "icon": "vercel" },
+        { "label": "Responsive Design", "icon": "responsive-design" }
+      ],
       "links": {
-        "repo": "https://github.com/youruser/pet-adoption-site",
-        "demo": "https://pet-adoption.example.com"
+        "repo": "https://github.com/youruser/bacha",
+        "demo": "https://bacha.example.com"
+      }
+    },
+    {
+      "id": "reservalo",
+      "icon": "app-window",
+      "title": "Resérvalo — UI móvil para reservas deportivas",
+      "subtitle": "Diseño de interfaz • Prototipo en Figma",
+      "year": 2025,
+      "description": "Proyecto de diseño centrado en la creación de la interfaz móvil para reservar canchas y espacios deportivos en Caracas, Venezuela. Surgió al explorar Figma y evolucionó en un prototipo con flujos de reserva, agenda, confirmación y recordatorios. Incluye componentes reutilizables, wireframes de baja/alta fidelidad y prototipos navegables.",
+      "tags": [
+        { "label": "Figma", "icon": "figma" },
+        { "label": "Canva", "icon": "canva" },
+        { "label": "Notion", "icon": "notion" },
+        { "label": "Trello", "icon": "trello" },
+        { "label": "PowerPoint", "icon": "microsoftpowerpoint" },
+        { "label": "Diseño responsivo", "icon": "responsive-design" }
+      ],
+      "links": {
+        "repo": "",
+        "demo": "https://www.figma.com/file/tu-prototipo"
+      }
+    },
+    {
+      "id": "cineverse",
+      "icon": "app-window",
+      "title": "Cineverse — Movie Hub (Collaborative)",
+      "subtitle": "Capstone Project • 4Geeks Academy",
+      "year": 2024,
+      "description": "Collaborative web app that consumes an external movies API and implements user authentication (sign up / log in) so users can browse titles, comment, rate, and save them to a watchlist. Front end with React/JS (routing & state), back end with Flask/Python and SQL; data validation and testing. Responsive UI.",
+      "tags": [
+        { "label": "HTML", "icon": "html5" },
+        { "label": "CSS", "icon": "css3" },
+        { "label": "Bootstrap", "icon": "bootstrap" },
+        { "label": "JavaScript", "icon": "javascript" },
+        { "label": "React", "icon": "react" },
+        { "label": "React Router", "icon": "react-router" },
+        { "label": "Context API", "icon": "context-api" },
+        { "label": "Fetch API", "icon": "fetch" },
+        { "label": "Python", "icon": "python" },
+        { "label": "Flask", "icon": "flask" },
+        { "label": "SQL", "icon": "sql" },
+        { "label": "REST API", "icon": "rest-api" },
+        { "label": "JWT Auth", "icon": "jwt" },
+        { "label": "Data Validation", "icon": "data-validation" },
+        { "label": "Jest (Testing)", "icon": "jest" },
+        { "label": "GitHub", "icon": "github" },
+        { "label": "Responsive Design", "icon": "responsive-design" }
+      ],
+      "links": {
+        "repo": "https://github.com/youruser/cineverse",
+        "demo": "https://cineverse.example.com"
       }
     }
   ]

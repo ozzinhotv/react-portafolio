@@ -1,22 +1,23 @@
 {
   "page": "navbar",
   "version": 1,
-  "brand": { "text": "OTV", "href": "/" },
+  "brand": { "text": "OTV", "href": "/#home" },
   "items": [
-    { "id": "home",        "label": "Home",       "href": "/en" },
-    { "id": "skills",      "label": "Skills",     "href": "/en/skills" },
-    { "id": "experience",  "label": "Experience", "href": "/en/experience" },
-    { "id": "projects",    "label": "Projects",   "href": "/en/projects" },
-    { "id": "education",   "label": "Education",  "href": "/en/education" },
-    { "id": "contact",     "label": "Contact",    "href": "/en/contact" }
+    { "id": "home",       "label": "Home",       "href": "/#home" },
+    { "id": "about",      "label": "About",      "href": "/#about" },
+    { "id": "skills",     "label": "Skills",     "href": "/#skills" },
+    { "id": "experience", "label": "Experience", "href": "/#experience" },
+    { "id": "projects",   "label": "Projects",   "href": "/#projects" },
+    { "id": "education",  "label": "Education",  "href": "/#education" },
+    { "id": "contact",    "label": "Contact",    "href": "/#contact" }
   ],
   "utilities": {
     "locale": {
       "type": "locale-switcher",
       "current": "en",
       "options": [
-        { "code": "es", "label": "ES", "href": "/es" },
-        { "code": "en", "label": "EN", "href": "/en" }
+        { "code": "en", "label": "EN", "href": "/#home" },
+        { "code": "es", "label": "ES", "href": "/#home" }
       ]
     },
     "theme": { "type": "theme-toggle", "icons": { "light": "sun", "dark": "moon" } }

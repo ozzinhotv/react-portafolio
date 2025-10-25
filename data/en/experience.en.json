@@ -1,104 +1,161 @@
-[  
+[
   {
-    "id": "job-6",
+    "id": "job-7",
     "role": "Developer Trainee",
     "company": "Andromeda Ventures",
-    "location": "Caracas, VE",
+    "location": "Caracas, VE - Hybrid",
     "start": "2025-01",
     "end": "2025-10",
     "current": false,
-    "logo": "/logos/andromeda.webp",
+    "logo": "/logo/andromeda-logo.png",
     "tasks": [
-      "Análisis financiero y monitoreo de proyectos.",
-      "Soporte en reportes y métricas clave de desempeño.",
-      "Colaboración con equipos cross-funcionales."
+      "AI research: evaluated practical AI tools/workflows and documented quick guides for the team.",
+      "QA tooling: piloted Cypress for e2e tests; wrote simple test flows and setup notes.",
+      "Training: completed Angular & TypeScript workshops; applied fundamentals in small tasks.",
+      "SPA demo: built a small single-page app (routing, basic state, mock APIs) to showcase progress."
     ],
-    "skills": ["Excel", "KPIs", "Reporting", "Análisis Financiero"]
+    "skills": [
+      { "label": "Angular", "icon": "angular" },
+      { "label": "TypeScript", "icon": "typescript" },
+      { "label": "Tailwind CSS", "icon": "tailwindcss" },
+      { "label": "Cypress", "icon": "cypress" },
+      { "label": "Testing/QA", "icon": "testing" },
+      { "label": "AI Tools", "icon": "ai" }
+    ]
   },
-
+  {
+    "id": "job-6",
+    "role": "Financial Specialist",
+    "company": "Andromeda Ventures",
+    "location": "Caracas, VE",
+    "start": "2019-06",
+    "end": "2021-02",
+    "current": false,
+    "logo": "/logo/andromeda-logo.png",
+    "tasks": [
+      "System migration: moved eFactory to Odoo, built CSV templates, cleaned fields, adopted ClickUp and simple AI checks.",
+      "Billing quality: mass billing with 0.3% error rate and faster turnaround.",
+      "Bank reconciliations: scaled from ~400 → ~1,200 entries/month across entities; GL matched bank.",
+      "Product/processor reconciliations: obtained product data via support (e.g., Ekiipago) and matched it to client statements and bank deposits.",
+      "Reporting: weekly/biweekly/monthly packs with variances and brief root-cause notes."
+    ],
+    "skills": [
+      { "label": "Odoo", "icon": "odoo" },
+      { "label": "ClickUp", "icon": "clickup" },
+      { "label": "Excel/CSV", "icon": "excel" },
+      { "label": "Google Sheets", "icon": "google-sheets" },
+      { "label": "Bank Reconciliation", "icon": "reconciliation" },
+      { "label": "Reporting", "icon": "excel" }
+    ]
+  },
   {
     "id": "job-5",
-    "role": "Junior Financial Analyst",
-    "company": "Stellar Investments",
+    "role": "Finance Trainee",
+    "company": "Andromeda Ventures",
     "location": "Caracas, VE",
     "start": "2019-06",
     "end": "2021-02",
     "current": false,
-    "logo": "/logos/stellar.webp",
+    "logo": "/logo/andromeda-logo.png",
     "tasks": [
-      "Apoyo en la elaboración de presupuestos y previsiones financieras.",
-      "Análisis de datos financieros para identificar tendencias.",
-      "Preparación de informes financieros para la alta dirección."
+      "Mass billing: ~650 invoices/quarter in eFactory; printed and archived by client/date.",
+      "Records & filing: organized 300+ docs/cycle (POs, invoices, receipts), indexed by type/client/date.",
+      "Bank reconciliations: 3 companies, ~400 entries/month; ensured GL = bank.",
+      "Controls: accuracy checks and traceable archives for audits and month-end close."
     ],
-    "skills": ["Análisis de Datos", "Presupuestos", "Previsiones", "Informes Financieros"]
+    "skills": [
+      { "label": "Excel", "icon": "excel" },
+      { "label": "Google Sheets", "icon": "google-sheets" },
+      { "label": "Bank Reconciliation", "icon": "reconciliation" },
+      { "label": "Records Control", "icon": "excel" }
+    ]
   },
-
   {
     "id": "job-4",
-    "role": "Junior Financial Analyst",
-    "company": "Stellar Investments",
+    "role": "Customer Service Representative (Phone Support)",
+    "company": "HolaDoc",
     "location": "Caracas, VE",
     "start": "2019-06",
     "end": "2021-02",
     "current": false,
-    "logo": "/logos/stellar.webp",
+    "logo": "/logo/holaDocLogo.png",
     "tasks": [
-      "Apoyo en la elaboración de presupuestos y previsiones financieras.",
-      "Análisis de datos financieros para identificar tendencias.",
-      "Preparación de informes financieros para la alta dirección."
+      "Answered inbound calls; provided clear account, product, and benefits information.",
+      "Helped customers cancel service; created tickets and processed requests per policy.",
+      "De-escalated difficult calls with empathy and clear communication.",
+      "Collaborated with the team to share FAQs and reduce repeat calls."
     ],
-    "skills": ["Análisis de Datos", "Presupuestos", "Previsiones", "Informes Financieros"]
+    "skills": [
+      { "label": "Customer Support", "icon": "customer-support" },
+      { "label": "De-escalation", "icon": "de-escalation" },
+      { "label": "Communication", "icon": "customer-support" },
+      { "label": "FAQ/Knowledge Base", "icon": "faq" }
+    ]
   },
-
   {
     "id": "job-3",
-    "role": "Junior Financial Analyst",
-    "company": "Stellar Investments",
+    "role": "Sales Representative (Trade Marketing & Sales)",
+    "company": "Cervezas Peregrina",
     "location": "Caracas, VE",
     "start": "2019-06",
     "end": "2021-02",
     "current": false,
-    "logo": "/logos/stellar.webp",
+    "logo": "/logo/peregrinaLogo.png",
     "tasks": [
-      "Apoyo en la elaboración de presupuestos y previsiones financieras.",
-      "Análisis de datos financieros para identificar tendencias.",
-      "Preparación de informes financieros para la alta dirección."
+      "Client relations & activations: managed accounts and supported promotions/in-store activations.",
+      "Trade marketing research: analyzed competitors and delivered brief reports with actionable ideas.",
+      "Activity logging & scoring: recorded daily vendor/store visits; built Excel scores to assess performance and spot low-stock areas.",
+      "Reporting: prepared weekly sales/coverage summaries for the team."
     ],
-    "skills": ["Análisis de Datos", "Presupuestos", "Previsiones", "Informes Financieros"]
+    "skills": [
+      { "label": "Trade Marketing", "icon": "trade-marketing" },
+      { "label": "Client Relations", "icon": "customer-support" },
+      { "label": "Excel Scoring", "icon": "excel-scoring" },
+      { "label": "Reporting", "icon": "excel" }
+    ]
   },
-
   {
     "id": "job-2",
-    "role": "Junior Financial Analyst",
-    "company": "Stellar Investments",
+    "role": "Industrial Engineer Intern",
+    "company": "Envases Industriales del Centro, C.A.",
     "location": "Caracas, VE",
     "start": "2019-06",
     "end": "2021-02",
     "current": false,
-    "logo": "/logos/stellar.webp",
+    "logo": "/logo/noImgPlaceholder.png",
     "tasks": [
-      "Apoyo en la elaboración de presupuestos y previsiones financieras.",
-      "Análisis de datos financieros para identificar tendencias.",
-      "Preparación de informes financieros para la alta dirección."
+      "Rotations in production, quality, maintenance, and logistics to understand the full process.",
+      "Learned the path from customer order to finished product and delivery.",
+      "Supported line checks, basic quality control, and inventory updates.",
+      "Helped with simple process notes to improve day-to-day operations."
     ],
-    "skills": ["Análisis de Datos", "Presupuestos", "Previsiones", "Informes Financieros"]
+    "skills": [
+      { "label": "Inventory", "icon": "inventory" },
+      { "label": "Quality", "icon": "quality" },
+      { "label": "Logistics", "icon": "logistics" },
+      { "label": "Operations", "icon": "operations" }
+    ]
   },
-
   {
     "id": "job-1",
-    "role": "Junior Financial Analyst",
-    "company": "Stellar Investments",
+    "role": "Summer Intern",
+    "company": "Evenseg",
     "location": "Caracas, VE",
     "start": "2019-06",
     "end": "2021-02",
     "current": false,
-    "logo": "/logos/stellar.webp",
+    "logo": "/logo/evenseg.jpeg",
     "tasks": [
-      "Apoyo en la elaboración de presupuestos y previsiones financieras.",
-      "Análisis de datos financieros para identificar tendencias.",
-      "Preparación de informes financieros para la alta dirección."
+      "Rotations through HR, Marketing, Finance, and Operations to learn how the business runs.",
+      "Assisted inventory management (equipment check-in/out, counts, simple reports).",
+      "Supported event operations: basic access control, staff checklists, and logistics.",
+      "Learned core security and protocol procedures for public and private events."
     ],
-    "skills": ["Análisis de Datos", "Presupuestos", "Previsiones", "Informes Financieros"]
+    "skills": [
+      { "label": "Inventory", "icon": "inventory" },
+      { "label": "Operations", "icon": "operations" },
+      { "label": "Events", "icon": "events" },
+      { "label": "Communication", "icon": "customer-support" }
+    ]
   }
-  
 ]

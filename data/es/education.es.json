@@ -1,49 +1,161 @@
 [
   {
-    "id": "edu-3",
-    "degree": "Ingeniería de Software (B.Eng.)",
-    "institution": "Concordia University",
-    "location": "Montreal, CA",
-    "start": "2024-09",
-    "current": true,
-    "logo": "/logos/concordia.webp",
-    "highlights": [
-      "Fundamentos de arquitectura de software y patrones.",
-      "Estructuras de datos y algoritmos.",
-      "Proyecto integrador con énfasis en colaboración y control de versiones."
+    "id": "job-7",
+    "role": "Trainee de Desarrollo",
+    "company": "Andromeda Ventures",
+    "location": "Caracas, VE - Híbrido",
+    "start": "2025-01",
+    "end": "2025-10",
+    "current": false,
+    "logo": "/logo/andromeda-logo.png",
+    "tasks": [
+      "Investigación en IA: evalué herramientas y flujos de trabajo de IA prácticos y documenté guías rápidas para el equipo.",
+      "Herramientas de QA: piloteé Cypress para pruebas e2e; escribí flujos simples de prueba y notas de configuración.",
+      "Formación: completé talleres de Angular y TypeScript; apliqué fundamentos en tareas pequeñas.",
+      "Demo SPA: construí una single-page app pequeña (routing, estado básico, APIs simuladas) para mostrar progreso."
     ],
-    "skills": ["Algoritmos", "Estructuras de Datos", "Diseño de Software", "Git/GitHub"]
+    "skills": [
+      { "label": "Angular", "icon": "angular" },
+      { "label": "TypeScript", "icon": "typescript" },
+      { "label": "Tailwind CSS", "icon": "tailwindcss" },
+      { "label": "Cypress", "icon": "cypress" },
+      { "label": "Testing/QA", "icon": "testing" },
+      { "label": "Herramientas de IA", "icon": "ai" }
+    ]
   },
   {
-    "id": "edu-2",
-    "degree": "Diplomado en Desarrollo Web",
-    "institution": "Programa Profesional",
-    "location": "Remoto",
-    "start": "2023-03",
-    "end": "2023-10",
+    "id": "job-6",
+    "role": "Especialista Financiero",
+    "company": "Andromeda Ventures",
+    "location": "Caracas, VE",
+    "start": "2019-06",
+    "end": "2021-02",
     "current": false,
-    "logo": "/logos/webdev.webp",
-    "highlights": [
-      "Maquetación semántica con HTML5/CSS3 y responsive design.",
-      "SPA con React y enrutamiento básico.",
-      "Buenas prácticas: ESLint, Prettier y testing de componentes."
+    "logo": "/logo/andromeda-logo.png",
+    "tasks": [
+      "Migración de sistemas: pasé de eFactory a Odoo, construí plantillas CSV, limpié campos, adopté ClickUp y verificaciones simples con IA.",
+      "Calidad de facturación: facturación masiva con 0.3% de error y tiempos de respuesta más rápidos.",
+      "Conciliaciones bancarias: escalé de ~400 → ~1,200 asientos/mes entre entidades; el mayor general cuadró con banco.",
+      "Conciliaciones de productos/procesadores: obtuve datos de producto vía soporte (p. ej., Ekiipago) y los casé con estados de cuenta de clientes y depósitos bancarios.",
+      "Reportes: paquetes semanales/quincenales/mensuales con variaciones y notas breves de causa raíz."
     ],
-    "skills": ["HTML5", "CSS3", "React", "Responsive Design", "Testing"]
+    "skills": [
+      { "label": "Odoo", "icon": "odoo" },
+      { "label": "ClickUp", "icon": "clickup" },
+      { "label": "Excel/CSV", "icon": "excel" },
+      { "label": "Google Sheets", "icon": "google-sheets" },
+      { "label": "Conciliación bancaria", "icon": "reconciliation" },
+      { "label": "Reportería", "icon": "excel" }
+    ]
   },
   {
-    "id": "edu-1",
-    "degree": "Curso de Java Orientado a Objetos",
-    "institution": "Formación Online",
-    "location": "Remoto",
-    "start": "2022-05",
-    "end": "2022-08",
+    "id": "job-5",
+    "role": "Trainee de Finanzas",
+    "company": "Andromeda Ventures",
+    "location": "Caracas, VE",
+    "start": "2019-06",
+    "end": "2021-02",
     "current": false,
-    "logo": "/logos/java.webp",
-    "highlights": [
-      "POO: clases, herencia, polimorfismo y encapsulación.",
-      "Manejo de archivos y excepciones.",
-      "Mini-proyecto: gestor de registros por consola."
+    "logo": "/logo/andromeda-logo.png",
+    "tasks": [
+      "Facturación masiva: ~650 facturas/trimestre en eFactory; impresión y archivo por cliente/fecha.",
+      "Registros y archivo: organizados 300+ documentos/ciclo (OC, facturas, recibos), indexados por tipo/cliente/fecha.",
+      "Conciliaciones bancarias: 3 empresas, ~400 asientos/mes; aseguré que el mayor general = banco.",
+      "Controles: verificaciones de exactitud y archivos trazables para auditorías y cierre mensual."
     ],
-    "skills": ["Java", "POO", "File I/O", "Excepciones"]
+    "skills": [
+      { "label": "Excel", "icon": "excel" },
+      { "label": "Google Sheets", "icon": "google-sheets" },
+      { "label": "Conciliación bancaria", "icon": "reconciliation" },
+      { "label": "Control documental", "icon": "excel" }
+    ]
+  },
+  {
+    "id": "job-4",
+    "role": "Atención al Cliente (Soporte Telefónico)",
+    "company": "HolaDoc",
+    "location": "Caracas, VE",
+    "start": "2019-06",
+    "end": "2021-02",
+    "current": false,
+    "logo": "/logo/holaDocLogo.png",
+    "tasks": [
+      "Atendí llamadas entrantes; brindé información clara sobre cuentas, productos y beneficios.",
+      "Ayudé a clientes a cancelar el servicio; generé tickets y procesé solicitudes según política.",
+      "Desescalé llamadas difíciles con empatía y comunicación clara.",
+      "Colaboré con el equipo para compartir preguntas frecuentes y reducir llamadas repetidas."
+    ],
+    "skills": [
+      { "label": "Atención al cliente", "icon": "customer-support" },
+      { "label": "Desescalación", "icon": "de-escalation" },
+      { "label": "Comunicación", "icon": "customer-support" },
+      { "label": "FAQ/Base de conocimiento", "icon": "faq" }
+    ]
+  },
+  {
+    "id": "job-3",
+    "role": "Representante de Ventas (Trade Marketing y Ventas)",
+    "company": "Cervezas Peregrina",
+    "location": "Caracas, VE",
+    "start": "2019-06",
+    "end": "2021-02",
+    "current": false,
+    "logo": "/logo/peregrinaLogo.png",
+    "tasks": [
+      "Relación con clientes y activaciones: gestión de cuentas y apoyo en promociones/activaciones en punto de venta.",
+      "Investigación de trade marketing: analicé competidores y entregué reportes breves con ideas accionables.",
+      "Registro y scoring de actividades: registré visitas diarias a comercios; construí puntajes en Excel para evaluar desempeño y detectar quiebres de stock.",
+      "Reportes: resúmenes semanales de ventas/cobertura para el equipo."
+    ],
+    "skills": [
+      { "label": "Trade Marketing", "icon": "trade-marketing" },
+      { "label": "Relación con clientes", "icon": "customer-support" },
+      { "label": "Scoring en Excel", "icon": "excel-scoring" },
+      { "label": "Reportería", "icon": "excel" }
+    ]
+  },
+  {
+    "id": "job-2",
+    "role": "Pasante de Ingeniería Industrial",
+    "company": "Envases Industriales del Centro, C.A.",
+    "location": "Caracas, VE",
+    "start": "2019-06",
+    "end": "2021-02",
+    "current": false,
+    "logo": "/logo/noImgPlaceholder.png",
+    "tasks": [
+      "Rotaciones en producción, calidad, mantenimiento y logística para entender el proceso completo.",
+      "Aprendí el flujo desde la orden del cliente hasta el producto terminado y su entrega.",
+      "Apoyé chequeos en línea, control de calidad básico y actualizaciones de inventario.",
+      "Ayudé con notas de proceso simples para mejorar la operación diaria."
+    ],
+    "skills": [
+      { "label": "Inventario", "icon": "inventory" },
+      { "label": "Calidad", "icon": "quality" },
+      { "label": "Logística", "icon": "logistics" },
+      { "label": "Operaciones", "icon": "operations" }
+    ]
+  },
+  {
+    "id": "job-1",
+    "role": "Pasante de Verano",
+    "company": "Evenseg",
+    "location": "Caracas, VE",
+    "start": "2019-06",
+    "end": "2021-02",
+    "current": false,
+    "logo": "/logo/evenseg.jpeg",
+    "tasks": [
+      "Rotaciones por RR. HH., Marketing, Finanzas y Operaciones para aprender el funcionamiento del negocio.",
+      "Asistí la gestión de inventario (entrada/salida de equipos, conteos, reportes simples).",
+      "Apoyé operaciones de eventos: control de acceso básico, checklists de personal y logística.",
+      "Aprendí procedimientos de seguridad y protocolos para eventos públicos y privados."
+    ],
+    "skills": [
+      { "label": "Inventario", "icon": "inventory" },
+      { "label": "Operaciones", "icon": "operations" },
+      { "label": "Eventos", "icon": "events" },
+      { "label": "Comunicación", "icon": "customer-support" }
+    ]
   }
 ]

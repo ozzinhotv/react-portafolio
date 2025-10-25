@@ -1,49 +1,32 @@
 [
   {
     "id": "edu-3",
-    "degree": "Software Engineering (B.Eng.)",
-    "institution": "Concordia University",
-    "location": "Montreal, CA",
-    "start": "2024-09",
-    "current": true,
-    "logo": "/logos/concordia.webp",
-    "highlights": [
-      "Foundations of software architecture and design patterns.",
-      "Data structures and algorithms.",
-      "Capstone project with emphasis on collaboration and version control."
-    ],
-    "skills": ["Algorithms", "Data Structures", "Software Design", "Git/GitHub"]
+    "degree": "Full Stack WebDeveloper",
+    "institution": "4geeks Academy",
+    "location": "Remote",
+    "start": "2023-09",
+    "end": "2024-02",
+    "current": false,
+    "logo": "/logo/4geeks.jpg"
   },
   {
     "id": "edu-2",
-    "degree": "Web Development Diploma",
-    "institution": "Professional Program",
-    "location": "Remote",
-    "start": "2023-03",
-    "end": "2023-10",
+    "degree": "Production Engineering",
+    "institution": "Universidad Metropolitana",
+    "location": "Caracas, VE",
+    "start": "2018-09",
+    "end": "2020-12",
     "current": false,
-    "logo": "/logos/webdev.webp",
-    "highlights": [
-      "Semantic layout with HTML5/CSS3 and responsive design.",
-      "SPA with React and basic routing.",
-      "Best practices: ESLint, Prettier, and component testing."
-    ],
-    "skills": ["HTML5", "CSS3", "React", "Responsive Design", "Testing"]
+    "logo": "/logo/metro.png"
   },
   {
     "id": "edu-1",
-    "degree": "Object-Oriented Java Course",
-    "institution": "Online Training",
-    "location": "Remote",
-    "start": "2022-05",
-    "end": "2022-08",
+    "degree": "High School Diploma in Science",
+    "institution": "Colegio Integral el Avila",
+    "location": "Caracas, VE",
+    "start": "2005-09",
+    "end": "2018-06",
     "current": false,
-    "logo": "/logos/java.webp",
-    "highlights": [
-      "OOP: classes, inheritance, polymorphism, and encapsulation.",
-      "File handling and exceptions.",
-      "Mini project: console-based records manager."
-    ],
-    "skills": ["Java", "OOP", "File I/O", "Exceptions"]
+    "logo": "/logo/ciea.png"
   }
 ]

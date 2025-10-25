@@ -9,12 +9,15 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@iconify/icons-lucide": "^1.2.135",
+    "@iconify/icons-simple-icons": "^1.2.74",
     "daisyui": "^5.3.9",
     "next": "16.0.0",
     "react": "19.2.0",
     "react-dom": "19.2.0"
   },
   "devDependencies": {
+    "@iconify/react": "^6.0.2",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

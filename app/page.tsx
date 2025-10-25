@@ -1,7 +1,21 @@
+import Hero from "@/components/layout/Hero";
+import Skills from "@/components/layout/Skills";
+import AboutMe from "@/components/layout/AboutMe";
+import ExperienceList from "@/components/layout/ExperienceList";
+import Projects from "@/components/layout/Project";
+import Education from "@/components/layout/Education";
+import Contact from "@/components/layout/ContactMe";
+
 export default function Page() {
   return (
-    <main className="mx-auto max-w-6xl p-6">
-      <h1 className="text-3xl font-bold">Home</h1>
+    <main>
+      <section id="home"><Hero /></section>
+      <section id="about"><AboutMe /></section>
+      <section id="skills"><Skills /></section>
+      <section id="experience"><ExperienceList /></section>
+      <section id="projects"><Projects /></section>
+      <section id="education"><Education /></section>
+      <section id="contact"><Contact /></section>
     </main>
   );
 }

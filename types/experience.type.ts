@@ -1,3 +1,5 @@
+export type SkillItem = string | { label: string; icon?: string };
+
 export type Experience = {
   id: string;
   role: string;
@@ -8,5 +10,5 @@ export type Experience = {
   current?: boolean;
   logo?: string;
   tasks: string[];
-  skills: string[];
+  skills: SkillItem[];
 };
