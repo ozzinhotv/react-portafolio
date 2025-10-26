@@ -3,7 +3,7 @@ import Link from "next/link";
 import { cookies } from "next/headers";
 import { getSection } from "@/libs/getSection";
 import { LOCALE_COOKIE, defaultLocale, type Locale } from "@/libs/i18n";
-import { LocaleSwitcher } from "@/components/ui/LocaleSwitcher";
+import { LocaleSwitcher } from "@/components/ui/shared/navbar/LocaleSwitcher";
 import type { NavPage } from "@/types/navbar.type";
 
 export default async function Navbar() {

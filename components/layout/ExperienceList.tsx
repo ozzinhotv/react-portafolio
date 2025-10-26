@@ -2,8 +2,8 @@ import { cookies } from "next/headers";
 import { getSection } from "@/libs/getSection";
 import { LOCALE_COOKIE, defaultLocale, type Locale } from "@/libs/i18n";
 import { compareByEndOrStartDesc } from "@/libs/date";
-import ExperienceCard from "@/components/ui/ExperienceCard";
 import type { ExperiencePage } from "@/types/experience.type";
+import ExperienceTimeline from "@/components/ui/experience/ExperienceTimeline";
 
 export default async function ExperienceList() {
   const locale =
@@ -14,7 +14,6 @@ export default async function ExperienceList() {
 
   return (
     <section className="mx-auto max-w-6xl p-6">
-      {/* Header */}
       {page.intro && (
         <header className="mb-6">
           <h2 className="text-balance text-3xl font-bold leading-tight">
@@ -29,12 +28,11 @@ export default async function ExperienceList() {
         </header>
       )}
 
-      {/* Grid */}
-      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {items.map((it) => (
-          <ExperienceCard key={it.id} item={it} locale={locale as "en" | "es"} />
-        ))}
-      </div>
+      <ExperienceTimeline
+        items={items}
+        locale={(locale as "en" | "es") ?? "en"}
+        accent="sky"
+      />
     </section>
   );
 }
