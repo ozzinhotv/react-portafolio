@@ -5,30 +5,15 @@ import { LOCALE_COOKIE, defaultLocale, type Locale } from "@/libs/i18n";
 import { Icon } from "@iconify/react";
 import { getHeaderIcon } from "@/icons/header-icons";
 
-type ContactCard = {
-  id: string;
-  title: string;
-  icon?: string;
-  value: string;
-  href?: string;
-};
-
-type ContactData = {
-  page: "contact";
-  version: number;
-  locale?: string;
-  intro?: { title?: string; highlight?: string; subtitle?: string };
-  cards: ContactCard[];
-  cta?: { label: string; icon?: string; href: string };
-  social?: { id: string; icon?: string; href: string }[];
-};
+// ⬇️ Usa los tipos desde /types
+import type { ContactPage } from "@/types/contactMe.type";
 
 export default async function Contact() {
   const locale =
     ((await cookies()).get(LOCALE_COOKIE)?.value as Locale) || defaultLocale;
 
   // Asegúrate de tener: src/data/en/contact.en.json y src/data/es/contact.es.json
-  const data = await getSection<ContactData>("contact", locale);
+  const data = await getSection<ContactPage>("contact", locale);
 
   // Acentos sutiles por card (opcional)
   const accentByCardId: Record<string, string> = {

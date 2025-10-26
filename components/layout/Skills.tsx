@@ -4,38 +4,16 @@ import { LOCALE_COOKIE, defaultLocale, type Locale } from "@/libs/i18n";
 import { Icon } from "@iconify/react";
 import { ICONS, ICON_ALIASES } from "@/icons/skill-icons";
 import { getHeaderIcon } from "@/icons/header-icons";
-
-type BadgeItem = { label: string; icon?: string };
-type LanguageItem = { label: string; code: string; level: string; proficiency: number };
-
-type SkillsCardBadges = {
-  id: string;
-  title: string;
-  type: "badges";
-  items: BadgeItem[];
-};
-
-type SkillsCardLanguages = {
-  id: string;
-  title: string;
-  type: "languages";
-  items: LanguageItem[];
-};
-
-type SkillsData = {
-  page: "skills";
-  version: number;
-  cards: Array<SkillsCardBadges | SkillsCardLanguages>;
-};
+import type { SkillsPage } from "@/types/skills.type";
 
 export default async function Skills() {
   const cookieLocale =
     ((await cookies()).get(LOCALE_COOKIE)?.value as Locale) || defaultLocale;
 
-  const data = await getSection<SkillsData>("skills", cookieLocale);
+  const data = await getSection<SkillsPage>("skills", cookieLocale);
   const cards = data.cards;
 
-  // —— Acentos por tarjeta (mismos tonos que About) ——
+  // —— Acentos por tarjeta ——
   const accentById: Record<string, string> = {
     "programming-web": "from-sky-600/25 to-sky-500/15",
     "dev-tools-frameworks": "from-emerald-600/25 to-emerald-500/15",
@@ -46,6 +24,21 @@ export default async function Skills() {
 
   return (
     <section className="mx-auto max-w-6xl px-6 py-8">
+      {/* Header */}
+      {data.intro && (
+        <header className="mb-6">
+          <h2 className="text-balance text-3xl font-bold leading-tight">
+            {data.intro.title}{" "}
+            {data.intro.highlight && (
+              <span className="text-blue-500">{data.intro.highlight}</span>
+            )}
+          </h2>
+          {data.intro.subtitle && (
+            <p className="mt-2 text-pretty text-zinc-400">{data.intro.subtitle}</p>
+          )}
+        </header>
+      )}
+
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {cards.map((card) => (
           <article

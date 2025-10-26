@@ -1,33 +1,38 @@
 {
   "page": "skills",
   "version": 2,
+  "intro": {
+    "title": "Habilidades",
+    "highlight": "Stack práctico y listo para producción",
+    "subtitle": "Conjunto enfocado en desarrollo front-end, tooling y productividad—optimizado para entregar UI limpia y mantenible."
+  },
   "cards": [
     {
       "id": "programming-web",
       "title": "Programación y Desarrollo Web",
       "type": "badges",
       "items": [
-        { "label": "TypeScript",   "icon": "typescript" },
-        { "label": "JavaScript",   "icon": "javascript" },
-        { "label": "HTML5",        "icon": "html5" },
-        { "label": "CSS3",         "icon": "css3" },
-        { "label": "React",        "icon": "react" },
-        { "label": "Angular",      "icon": "angular" },
-        { "label": "Next.js",      "icon": "nextdotjs" },
-        { "label": "Tailwind CSS", "icon": "tailwindcss" },
-        { "label": "Bootstrap",    "icon": "bootstrap" }
+        { "label": "TypeScript",  "icon": "typescript" },
+        { "label": "JavaScript",  "icon": "javascript" },
+        { "label": "HTML5",       "icon": "html5" },
+        { "label": "CSS3",        "icon": "css3" },
+        { "label": "React",       "icon": "react" },
+        { "label": "Angular",     "icon": "angular" },
+        { "label": "Next.js",     "icon": "nextdotjs" },
+        { "label": "Tailwind CSS","icon": "tailwindcss" },
+        { "label": "Bootstrap",   "icon": "bootstrap" }
       ]
     },
     {
       "id": "dev-tools-frameworks",
-      "title": "Herramientas de Desarrollo y Frameworks",
+      "title": "Herramientas y Frameworks",
       "type": "badges",
       "items": [
-        { "label": "Node.js",       "icon": "nodedotjs" },
-        { "label": "Git & GitHub",  "icon": "github" },
-        { "label": "VS Code",       "icon": "visualstudiocode" },
-        { "label": "Vite",          "icon": "vite" },
-        { "label": "Vercel",        "icon": "vercel" }
+        { "label": "Node.js",      "icon": "nodedotjs" },
+        { "label": "Git y GitHub", "icon": "github" },
+        { "label": "VS Code",      "icon": "visualstudiocode" },
+        { "label": "Vite",         "icon": "vite" },
+        { "label": "Vercel",       "icon": "vercel" }
       ]
     },
     {
@@ -49,13 +54,13 @@
     },
     {
       "id": "design-pm-tools",
-      "title": "Diseño y Gestión",
+      "title": "Herramientas de Diseño y PM",
       "type": "badges",
       "items": [
-        { "label": "Figma",   "icon": "figma" },
-        { "label": "Canva",   "icon": "canva" },
-        { "label": "Trello",  "icon": "trello" },
-        { "label": "Notion",  "icon": "notion" }
+        { "label": "Figma",  "icon": "figma" },
+        { "label": "Canva",  "icon": "canva" },
+        { "label": "Trello", "icon": "trello" },
+        { "label": "Notion", "icon": "notion" }
       ]
     },
     {
@@ -63,7 +68,7 @@
       "title": "Idiomas",
       "type": "languages",
       "items": [
-        { "label": "Español", "code": "es", "level": "Nativo", "proficiency": 100 },
+        { "label": "Español", "code": "es", "level": "Hablante nativo", "proficiency": 100 },
         { "label": "Inglés",  "code": "en", "level": "Fluido · profesional", "proficiency": 85 }
       ]
     }

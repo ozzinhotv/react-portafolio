@@ -1,54 +1,59 @@
 {
   "page": "about",
   "version": 1,
+  "intro": {
+    "title": "Sobre mí",
+    "highlight": "Curioso y Determinado",
+    "subtitle": "Aspirante a ingeniero de software (Concordia), nacido en Venezuela (2005), explorando IA, ciberseguridad y desarrollo de videojuegos con mentalidad de crecimiento."
+  },
   "cards": [
     {
       "id": "my-story",
-      "title": "My Story",
+      "title": "Mi historia",
       "icon": "sparkles",
       "type": "text",
       "content": [
-        "Born in Caracas, Venezuela in 2005, I've always been fascinated by video games and technology...",
-        "Currently pursuing my Software Engineering degree at Concordia University..."
+        "Nací en Caracas, Venezuela, en 2005; siempre me han fascinado los videojuegos y la tecnología...",
+        "Actualmente curso la carrera de Ingeniería de Software en la Universidad Concordia..."
       ]
     },
     {
       "id": "technical-interests",
-      "title": "Technical Interests",
+      "title": "Intereses técnicos",
       "icon": "cpu",
       "type": "list",
       "items": [
-        { "label": "Artificial Intelligence", "icon": "bot" },
-        { "label": "Cybersecurity", "icon": "shield" },
-        { "label": "Game Development", "icon": "gamepad" }
+        { "label": "Inteligencia Artificial", "icon": "bot" },
+        { "label": "Ciberseguridad", "icon": "shield" },
+        { "label": "Desarrollo de Videojuegos", "icon": "gamepad" }
       ],
-      "note": "Currently exploring these areas to find my niche"
+      "note": "Actualmente exploro estas áreas para encontrar mi nicho"
     },
     {
       "id": "what-drives-me",
-      "title": "What Drives Me",
+      "title": "Qué me impulsa",
       "icon": "target",
       "type": "text",
       "content": [
-        "More than showcasing my skills, I want to demonstrate my hunger to learn and grow...",
-        "My goal is to work hard, absorb knowledge, and contribute meaningfully..."
+        "Más que exhibir habilidades, quiero demostrar mi hambre por aprender y crecer...",
+        "Mi objetivo es trabajar duro, absorber conocimiento y contribuir de forma significativa..."
       ]
     },
     {
       "id": "beyond-coding",
-      "title": "Beyond Coding",
+      "title": "Más allá del código",
       "icon": "heart",
       "type": "tags-group",
       "groups": [
         {
-          "label": "Hobbies",
-          "tags": ["Gym & Fitness", "Video Games", "Kitesurfing", "Skiing", "Socializing"]
+          "label": "Pasatiempos",
+          "tags": ["Gimnasio y fitness", "Videojuegos", "Kitesurf", "Esquí", "Socializar"]
         },
         {
-          "label": "Core Values",
+          "label": "Valores",
           "tags": [
-            "Quick Learner","Problem Solver","Team Player","Adaptable",
-            "Detail-Oriented","Results-Driven","Analytical Thinker","Growth Mindset"
+            "Aprendiz rápido", "Resolución de problemas", "Trabajo en equipo", "Adaptable",
+            "Orientado a los detalles", "Orientado a resultados", "Pensamiento analítico", "Mentalidad de crecimiento"
           ]
         }
       ]

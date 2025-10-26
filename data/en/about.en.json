@@ -1,6 +1,11 @@
 {
   "page": "about",
   "version": 1,
+  "intro": {
+    "title": "About Me",
+    "highlight": "Curious & Driven",
+    "subtitle": "Venezuelan-born (2005) aspiring software engineer at Concordia, exploring AI, cybersecurity, and game dev with a growth mindset."
+  },
   "cards": [
     {
       "id": "my-story",

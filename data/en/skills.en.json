@@ -1,6 +1,11 @@
 {
   "page": "skills",
   "version": 2,
+  "intro": {
+    "title": "Skills",
+    "highlight": "Practical, job-ready stack",
+    "subtitle": "A focused toolkit across front-end development, tooling, and productivity—optimized for shipping clean, maintainable UI."
+  },
   "cards": [
     {
       "id": "programming-web",

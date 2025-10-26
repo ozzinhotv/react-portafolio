@@ -1,9 +1,16 @@
+// components/ui/ExperienceCard.tsx
 import Image from "next/image";
-import { fmtRange } from "@/libs/getExperience";
+import { formatRangeMMYYYY } from "@/libs/date";
 import type { Experience, SkillItem } from "@/types/experience.type";
 import SkillPill from "@/components/ui/SkillPill";
 
-export default function ExperienceCard({ item }: { item: Experience }) {
+export default function ExperienceCard({
+  item,
+  locale = "en",
+}: {
+  item: Experience;
+  locale?: "en" | "es";
+}) {
   return (
     <article
       className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/3 p-5 shadow-sm backdrop-blur
@@ -28,16 +35,21 @@ export default function ExperienceCard({ item }: { item: Experience }) {
           </div>
         ) : (
           <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-white/5 ring-1 ring-white/10 sm:h-16 sm:w-16">
-            <span className="text-sm font-semibold text-zinc-400">{item.company?.slice(0,2).toUpperCase() ?? "EX"}</span>
+            <span className="text-sm font-semibold text-zinc-400">
+              {item.company?.slice(0, 2).toUpperCase() ?? "EX"}
+            </span>
           </div>
         )}
 
         <div className="min-w-0">
           <h3 className="truncate text-base font-semibold leading-tight">{item.role}</h3>
           <p className="mt-0.5 line-clamp-2 text-sm text-zinc-400">
-            {item.company}{item.location ? ` · ${item.location}` : ""}
+            {item.company}
+            {item.location ? ` · ${item.location}` : ""}
           </p>
-          <p className="mt-1 text-xs text-zinc-500">{fmtRange(item.start, item.end, item.current)}</p>
+          <p className="mt-1 text-xs text-zinc-500">
+            {formatRangeMMYYYY(item.start, item.end, item.current, locale)}
+          </p>
         </div>
       </header>
 

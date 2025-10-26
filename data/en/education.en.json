@@ -1,32 +1,41 @@
-[
-  {
-    "id": "edu-3",
-    "degree": "Full Stack WebDeveloper",
-    "institution": "4geeks Academy",
-    "location": "Remote",
-    "start": "2023-09",
-    "end": "2024-02",
-    "current": false,
-    "logo": "/logo/4geeks.jpg"
+{
+  "page": "education",
+  "version": 1,
+  "intro": {
+    "title": "Education",
+    "highlight": "Lifelong Learning",
+    "subtitle": "A path that blends engineering foundations with full-stack web development, applied with a practical, growth-oriented mindset."
   },
-  {
-    "id": "edu-2",
-    "degree": "Production Engineering",
-    "institution": "Universidad Metropolitana",
-    "location": "Caracas, VE",
-    "start": "2018-09",
-    "end": "2020-12",
-    "current": false,
-    "logo": "/logo/metro.png"
-  },
-  {
-    "id": "edu-1",
-    "degree": "High School Diploma in Science",
-    "institution": "Colegio Integral el Avila",
-    "location": "Caracas, VE",
-    "start": "2005-09",
-    "end": "2018-06",
-    "current": false,
-    "logo": "/logo/ciea.png"
-  }
-]
+  "items": [
+    {
+      "id": "edu-3",
+      "degree": "Full Stack Web Developer",
+      "institution": "4Geeks Academy",
+      "location": "Remote",
+      "start": "2023-09",
+      "end": "2024-02",
+      "current": false,
+      "logo": "/logo/4geeks.jpg"
+    },
+    {
+      "id": "edu-2",
+      "degree": "Production Engineering",
+      "institution": "Universidad Metropolitana",
+      "location": "Caracas, VE",
+      "start": "2018-09",
+      "end": "2020-12",
+      "current": false,
+      "logo": "/logo/metro.png"
+    },
+    {
+      "id": "edu-1",
+      "degree": "High School Diploma in Science",
+      "institution": "Colegio Integral El Ávila",
+      "location": "Caracas, VE",
+      "start": "2005-09",
+      "end": "2018-06",
+      "current": false,
+      "logo": "/logo/ciea.png"
+    }
+  ]
+}

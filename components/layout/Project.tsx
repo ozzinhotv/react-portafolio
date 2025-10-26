@@ -5,29 +5,15 @@ import { LOCALE_COOKIE, defaultLocale, type Locale } from "@/libs/i18n";
 import { getHeaderIcon } from "@/icons/header-icons";
 import { Icon } from "@iconify/react";
 import { ICONS, ICON_ALIASES } from "@/icons/skill-icons";
+import type { ProjectsPage } from "@/types/project.type";
 
-type ProjectTag = { label: string; icon?: string };
+// Type guard genérico
+function hasKey<T extends object>(obj: T, key: PropertyKey): key is keyof T {
+  return key in obj;
+}
 
-type ProjectCard = {
-  id: string;
-  title: string;
-  subtitle?: string;
-  year?: number;
-  description?: string;
-  tags?: ProjectTag[];
-  links?: { repo?: string; demo?: string };
-  icon?: string;
-};
-
-type ProjectsData = {
-  page: "projects";
-  version: number;
-  intro?: { title?: string; highlight?: string; subtitle?: string };
-  cta?: { label: string; href: string; icon?: string };
-  cards: ProjectCard[];
-};
-
-function resolveTagIcon(raw?: string): any | undefined {
+// Asegura devolver SIEMPRE string | undefined (lo que <Icon icon="..."> espera)
+function resolveTagIcon(raw?: string): string | undefined {
   if (!raw) return undefined;
   const key = raw
     .toLowerCase()
@@ -38,15 +24,30 @@ function resolveTagIcon(raw?: string): any | undefined {
     .replace(/\./g, "")
     .replace(/\s+/g, "-")
     .replace(/[^a-z0-9-]/g, "");
-  const alias = ICON_ALIASES[key];
-  return ICONS[key] ?? (alias ? ICONS[alias] : undefined);
+
+  // Los mapas deberían almacenar strings; por si acaso, validamos tipo
+  if (hasKey(ICONS, key)) {
+    const v = (ICONS as Record<string, unknown>)[key];
+    if (typeof v === "string") return v;
+  }
+
+  if (hasKey(ICON_ALIASES, key)) {
+    const alias = (ICON_ALIASES as Record<string, unknown>)[key];
+    if (typeof alias === "string" && hasKey(ICONS, alias)) {
+      const w = (ICONS as Record<string, unknown>)[alias];
+      if (typeof w === "string") return w;
+    }
+  }
+
+  return undefined;
 }
 
 export default async function Projects() {
   const locale =
     ((await cookies()).get(LOCALE_COOKIE)?.value as Locale) || defaultLocale;
 
-  const data = await getSection<ProjectsData>("project", locale);
+  // Asegúrate de tener: data/en/projects.en.json y data/es/projects.es.json
+  const data = await getSection<ProjectsPage>("projects", locale);
 
   const accentByProjectId: Record<string, string> = {
     "maze-pathfinder": "from-sky-600/25 to-sky-500/15",
@@ -73,9 +74,7 @@ export default async function Projects() {
             )}
           </h2>
           {data.intro.subtitle && (
-            <p className="mt-2 text-pretty text-zinc-400">
-              {data.intro.subtitle}
-            </p>
+            <p className="mt-2 text-pretty text-zinc-400">{data.intro.subtitle}</p>
           )}
           {data.cta && (
             <div className="mt-4">
@@ -101,7 +100,6 @@ export default async function Projects() {
       <div className="grid gap-5 sm:grid-cols-2">
         {data.cards.map((p) => {
           const cardIcon = getHeaderIcon(p.icon ?? p.id ?? "projects");
-
           return (
             <article
               key={p.id}
@@ -109,7 +107,6 @@ export default async function Projects() {
                          shadow-[0_0_0_1px_rgba(255,255,255,0.03)_inset] backdrop-blur
                          transition hover:bg-white/6 hover:shadow-lg"
             >
-              {/* Header limpio y robusto para títulos largos */}
               <div className="flex items-start justify-between gap-3">
                 <div className="flex min-w-0 items-start gap-3">
                   <span
@@ -137,20 +134,16 @@ export default async function Projects() {
                 </div>
 
                 {p.year && (
-                  <span className="ml-2 shrink-0 text-xs text-zinc-500">
-                    {p.year}
-                  </span>
+                  <span className="ml-2 shrink-0 text-xs text-zinc-500">{p.year}</span>
                 )}
               </div>
 
-              {/* Descripción */}
               {p.description && (
                 <p className="mt-3 text-pretty text-sm leading-relaxed text-zinc-300">
                   {p.description}
                 </p>
               )}
 
-              {/* Tags con icono */}
               {p.tags?.length ? (
                 <div className="mt-4 flex flex-wrap gap-2.5">
                   {p.tags.map((t) => {
@@ -171,16 +164,13 @@ export default async function Projects() {
                             aria-hidden="true"
                           />
                         )}
-                        <span className="truncate max-w-36 sm:max-w-none">
-                          {t.label}
-                        </span>
+                        <span className="truncate max-w-36 sm:max-w-none">{t.label}</span>
                       </span>
                     );
                   })}
                 </div>
               ) : null}
 
-              {/* Acciones */}
               {(p.links?.repo || p.links?.demo) && (
                 <div className="mt-5 flex flex-wrap gap-3">
                   {p.links?.repo && (
@@ -191,7 +181,7 @@ export default async function Projects() {
                       Repository
                     </Link>
                   )}
-                  {p.links?.demo && p.links.demo.length > 0 && (
+                  {p.links?.demo && (
                     <Link
                       href={p.links.demo}
                       className="rounded-lg bg-blue-600 px-3 py-1.5 text-xs text-white transition hover:bg-blue-500"
