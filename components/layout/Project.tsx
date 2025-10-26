@@ -4,78 +4,23 @@ import { getSection } from "@/libs/getSection";
 import { LOCALE_COOKIE, defaultLocale, type Locale } from "@/libs/i18n";
 import { getHeaderIcon } from "@/icons/header-icons";
 import { Icon } from "@iconify/react";
-import { ICONS, ICON_ALIASES } from "@/icons/skill-icons";
 import type { ProjectsPage } from "@/types/project.type";
 
-// Type guard genérico
-function hasKey<T extends object>(obj: T, key: PropertyKey): key is keyof T {
-  return key in obj;
-}
+import ProjectClient from "@/components/ui/projects/ProjectClient";
 
-// Asegura devolver SIEMPRE string | undefined (lo que <Icon icon="..."> espera)
-function resolveTagIcon(raw?: string): string | undefined {
-  if (!raw) return undefined;
-  const key = raw
-    .toLowerCase()
-    .trim()
-    .replace(/\s*&\s*/g, "-and-")
-    .replace(/\s*\+\s*/g, "-plus-")
-    .replace(/\s*\/\s*/g, "-")
-    .replace(/\./g, "")
-    .replace(/\s+/g, "-")
-    .replace(/[^a-z0-9-]/g, "");
-
-  // Los mapas deberían almacenar strings; por si acaso, validamos tipo
-  if (hasKey(ICONS, key)) {
-    const v = (ICONS as Record<string, unknown>)[key];
-    if (typeof v === "string") return v;
-  }
-
-  if (hasKey(ICON_ALIASES, key)) {
-    const alias = (ICON_ALIASES as Record<string, unknown>)[key];
-    if (typeof alias === "string" && hasKey(ICONS, alias)) {
-      const w = (ICONS as Record<string, unknown>)[alias];
-      if (typeof w === "string") return w;
-    }
-  }
-
-  return undefined;
-}
-
-export default async function Projects() {
-  const locale =
-    ((await cookies()).get(LOCALE_COOKIE)?.value as Locale) || defaultLocale;
-
-  // Asegúrate de tener: data/en/projects.en.json y data/es/projects.es.json
+export default async function Project() {
+  const locale = ((await cookies()).get(LOCALE_COOKIE)?.value as Locale) || defaultLocale;
   const data = await getSection<ProjectsPage>("projects", locale);
-
-  const accentByProjectId: Record<string, string> = {
-    "maze-pathfinder": "from-sky-600/25 to-sky-500/15",
-    "student-records-cli": "from-emerald-600/25 to-emerald-500/15",
-    "ecommerce-exceptions": "from-amber-600/25 to-amber-500/15",
-    "pet-adoption-site": "from-pink-600/25 to-pink-500/15",
-    "portfolio-site": "from-indigo-600/25 to-indigo-500/15",
-    "fundacion-villanueva": "from-violet-600/25 to-violet-500/15",
-    "universidad-andromeda": "from-teal-600/25 to-teal-500/15",
-    bacha: "from-fuchsia-600/25 to-fuchsia-500/15",
-    reservalo: "from-rose-600/25 to-rose-500/15",
-    cineverse: "from-cyan-600/25 to-cyan-500/15",
-  };
 
   return (
     <section className="mx-auto max-w-6xl px-6 py-8">
-      {/* Intro */}
       {data.intro && (
         <header className="mb-8">
-          <h2 className="text-balance text-3xl font-bold leading-tight">
+          <h2 className="text-3xl font-bold">
             {data.intro.title}{" "}
-            {data.intro.highlight && (
-              <span className="text-blue-500">{data.intro.highlight}</span>
-            )}
+            {data.intro.highlight && <span className="text-blue-500">{data.intro.highlight}</span>}
           </h2>
-          {data.intro.subtitle && (
-            <p className="mt-2 text-pretty text-zinc-400">{data.intro.subtitle}</p>
-          )}
+          {data.intro.subtitle && <p className="mt-2 text-zinc-400">{data.intro.subtitle}</p>}
           {data.cta && (
             <div className="mt-4">
               <Link
@@ -83,11 +28,7 @@ export default async function Projects() {
                 className="inline-flex items-center gap-2 rounded-lg border border-white/10 px-4 py-2 text-sm text-zinc-100 transition hover:bg-white/5"
               >
                 {data.cta.icon && (
-                  <Icon
-                    icon={getHeaderIcon(data.cta.icon)}
-                    className="h-4 w-4 text-white/85"
-                    aria-hidden="true"
-                  />
+                  <Icon icon={getHeaderIcon(data.cta.icon)} className="h-4 w-4 text-white/85" aria-hidden />
                 )}
                 {data.cta.label}
               </Link>
@@ -96,105 +37,7 @@ export default async function Projects() {
         </header>
       )}
 
-      {/* Cards */}
-      <div className="grid gap-5 sm:grid-cols-2">
-        {data.cards.map((p) => {
-          const cardIcon = getHeaderIcon(p.icon ?? p.id ?? "projects");
-          return (
-            <article
-              key={p.id}
-              className="group rounded-2xl border border-white/10 bg-white/4 p-5
-                         shadow-[0_0_0_1px_rgba(255,255,255,0.03)_inset] backdrop-blur
-                         transition hover:bg-white/6 hover:shadow-lg"
-            >
-              <div className="flex items-start justify-between gap-3">
-                <div className="flex min-w-0 items-start gap-3">
-                  <span
-                    className={[
-                      "shrink-0 inline-flex size-10 items-center justify-center rounded-xl",
-                      "ring-1 ring-white/10 bg-linear-to-br",
-                      accentByProjectId[p.id] ?? "from-zinc-800/70 to-zinc-700/50",
-                      "transition group-hover:brightness-110",
-                    ].join(" ")}
-                    aria-hidden="true"
-                  >
-                    <Icon icon={cardIcon} className="h-5 w-5 text-white/85" />
-                  </span>
-
-                  <div className="min-w-0 space-y-1">
-                    <h3 className="text-pretty text-lg font-semibold leading-snug text-zinc-100">
-                      {p.title}
-                    </h3>
-                    {p.subtitle && (
-                      <p className="text-pretty text-sm leading-snug text-zinc-400">
-                        {p.subtitle}
-                      </p>
-                    )}
-                  </div>
-                </div>
-
-                {p.year && (
-                  <span className="ml-2 shrink-0 text-xs text-zinc-500">{p.year}</span>
-                )}
-              </div>
-
-              {p.description && (
-                <p className="mt-3 text-pretty text-sm leading-relaxed text-zinc-300">
-                  {p.description}
-                </p>
-              )}
-
-              {p.tags?.length ? (
-                <div className="mt-4 flex flex-wrap gap-2.5">
-                  {p.tags.map((t) => {
-                    const tagIcon = resolveTagIcon(t.icon ?? t.label);
-                    return (
-                      <span
-                        key={`${p.id}-${t.label}`}
-                        className="inline-flex items-center gap-1.5 rounded-full
-                                   border border-white/10 bg-white/3
-                                   px-2.5 py-1 text-[11px] font-medium text-zinc-200
-                                   transition hover:bg-white/6"
-                        title={t.label}
-                      >
-                        {tagIcon && (
-                          <Icon
-                            icon={tagIcon}
-                            className="h-3.5 w-3.5 text-white/85"
-                            aria-hidden="true"
-                          />
-                        )}
-                        <span className="truncate max-w-36 sm:max-w-none">{t.label}</span>
-                      </span>
-                    );
-                  })}
-                </div>
-              ) : null}
-
-              {(p.links?.repo || p.links?.demo) && (
-                <div className="mt-5 flex flex-wrap gap-3">
-                  {p.links?.repo && (
-                    <Link
-                      href={p.links.repo}
-                      className="rounded-lg border border-white/10 px-3 py-1.5 text-xs text-zinc-100 transition hover:bg-white/5"
-                    >
-                      Repository
-                    </Link>
-                  )}
-                  {p.links?.demo && (
-                    <Link
-                      href={p.links.demo}
-                      className="rounded-lg bg-blue-600 px-3 py-1.5 text-xs text-white transition hover:bg-blue-500"
-                    >
-                      Live Demo
-                    </Link>
-                  )}
-                </div>
-              )}
-            </article>
-          );
-        })}
-      </div>
+      <ProjectClient data={data} />
     </section>
   );
 }
