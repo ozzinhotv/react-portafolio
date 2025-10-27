@@ -1,7 +1,6 @@
 // utils/hues.ts
 export type Accent = "sky" | "blue" | "emerald" | "teal" | "violet" | "fuchsia" | "rose" | "amber";
 
-/** Intenta inferir un "hue" a partir de la accentClass tipo: "from-indigo-600/25 to-indigo-500/15" */
 export function hueFromAccentClass(accent?: string): Accent {
   const s = accent ?? "";
   if (/fuchsia|magenta/i.test(s)) return "fuchsia";
@@ -14,7 +13,6 @@ export function hueFromAccentClass(accent?: string): Accent {
   return "blue";
 }
 
-/** Clases de hover para título y borde del card según hue */
 export function cardHoverClasses(h: Accent) {
   const map: Record<Accent, { title: string; border: string }> = {
     sky:      { title: "group-hover:text-sky-300",      border: "group-hover:border-sky-400/40" },
@@ -29,7 +27,6 @@ export function cardHoverClasses(h: Accent) {
   return map[h];
 }
 
-/** Asigna un accent (para SkillPill) según el icono/label del tag */
 export function pillAccentFromSkillIcon(key?: string): Accent {
   const k = (key ?? "").toLowerCase();
   if (/angular|html|jest|jwt|rest|css|bootstrap|react-router/.test(k)) return "rose";
