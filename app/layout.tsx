@@ -6,7 +6,7 @@ import Footer from "@/components/layout/Footer";
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
-      <body>
+      <body className="bg-info-content">
         <Navbar />
         {children}
         <Footer />

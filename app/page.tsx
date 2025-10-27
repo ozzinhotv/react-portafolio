@@ -9,7 +9,7 @@ import Contact from "@/components/layout/ContactMe";
 export default function Page() {
   return (
     <main>
-      <section id="home"><Hero /></section>
+      <section id="home"><Hero  /></section>
       <section id="about"><AboutMe /></section>
       <section id="skills"><Skills /></section>
       <section id="experience"><ExperienceList /></section>
