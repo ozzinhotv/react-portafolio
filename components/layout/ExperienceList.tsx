@@ -4,6 +4,7 @@ import { LOCALE_COOKIE, defaultLocale, type Locale } from "@/libs/i18n";
 import { compareByEndOrStartDesc } from "@/libs/date";
 import type { ExperiencePage } from "@/types/experience.type";
 import ExperienceTimeline from "@/components/ui/experience/ExperienceTimeline";
+import HeaderInline from "@/components/ui/shared/components/HeaderInline";
 
 export default async function ExperienceList() {
   const locale =
@@ -14,19 +15,7 @@ export default async function ExperienceList() {
 
   return (
     <section className="mx-auto max-w-6xl p-6">
-      {page.intro && (
-        <header className="mb-6">
-          <h2 className="text-balance text-3xl font-bold leading-tight">
-            {page.intro.title}{" "}
-            {page.intro.highlight && (
-              <span className="text-blue-500">{page.intro.highlight}</span>
-            )}
-          </h2>
-          {page.intro.subtitle && (
-            <p className="mt-2 text-pretty text-zinc-400">{page.intro.subtitle}</p>
-          )}
-        </header>
-      )}
+      {page.intro && <HeaderInline intro={page.intro} />}
 
       <ExperienceTimeline
         items={items}

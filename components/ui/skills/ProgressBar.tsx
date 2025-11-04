@@ -7,7 +7,10 @@ export default function ProgressBar({ current, total, className }: Props) {
   const [s, setS] = useState({ i: current ?? 0, t: total ?? 0 });
 
   useEffect(() => {
-    if (current != null && total != null) { setS({ i: current, t: total }); return; }
+    if (current != null && total != null) {
+      setS({ i: current, t: total });
+      return;
+    }
     const on = (e: Event) => {
       const d = (e as CustomEvent).detail as { index: number; total: number };
       setS({ i: d.index, t: d.total });
@@ -20,13 +23,16 @@ export default function ProgressBar({ current, total, className }: Props) {
 
   return (
     <div className={className ?? ""}>
-      <div className="mx-auto h-4 w-full max-w-5xl rounded-full bg-neutral-700/50" />
+      {/* Track */}
+      <div className="mx-auto h-3 w-full max-w-5xl rounded-full bg-white/10" />
+      {/* Bar (brand azul) */}
       <div
-        className="relative -mt-4 h-4 max-w-5xl mx-auto rounded-full bg-linear-to-r from-blue-500 via-indigo-500 to-fuchsia-500 shadow-[0_0_10px_rgba(99,102,241,0.35)] transition-[width] duration-300"
+        className="relative -mt-3 mx-auto h-3 max-w-5xl rounded-full bg-linear-to-r from-sky-400 via-cyan-400 to-teal-400 shadow-md transition-all duration-300"
         style={{ width: `${pct}%` }}
         role="progressbar"
+        aria-label="Skills progress"
         aria-valuemin={0}
-        aria-valuemax={s.t - 1}
+        aria-valuemax={Math.max(s.t - 1, 0)}
         aria-valuenow={s.i}
       />
     </div>
