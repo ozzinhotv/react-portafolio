@@ -1,3 +1,4 @@
+// components/ui/aboutMe/AboutCardsClient.tsx
 "use client";
 import React from "react";
 import { Icon } from "@iconify/react";
@@ -11,6 +12,43 @@ import type {
   AboutItem,
 } from "@/types/aboutMe.type";
 
+const TONES: Record<
+  string,
+  { text: string; icon: string; border: string; borderHover: string }
+> = {
+  "my-story": {
+    text: "text-sky-300",
+    icon: "text-sky-300",
+    border: "border-sky-400/40",
+    borderHover: "hover:border-sky-400/40",
+  },
+  "technical-interests": {
+    text: "text-emerald-300",
+    icon: "text-emerald-300",
+    border: "border-emerald-400/40",
+    borderHover: "hover:border-emerald-400/40",
+  },
+  "what-drives-me": {
+    text: "text-amber-300",
+    icon: "text-amber-300",
+    border: "border-amber-400/40",
+    borderHover: "hover:border-amber-400/40",
+  },
+  "beyond-coding": {
+    text: "text-fuchsia-300",
+    icon: "text-fuchsia-300",
+    border: "border-fuchsia-400/40",
+    borderHover: "hover:border-fuchsia-400/40",
+  },
+};
+
+const FALLBACK = {
+  text: "text-cyan-300",
+  icon: "text-cyan-300",
+  border: "border-cyan-400/40",
+  borderHover: "hover:border-cyan-400/40",
+};
+
 export default function AboutCardsClient({
   cards,
   accentById,
@@ -20,6 +58,8 @@ export default function AboutCardsClient({
 }) {
   const items: AboutItem[] = cards.map((card) => {
     const headerIcon = getHeaderIcon(card.icon ?? card.id);
+    const tone = TONES[card.id] ?? FALLBACK;
+
     let content: React.ReactNode = null;
 
     if (card.type === "text") {
@@ -89,6 +129,7 @@ export default function AboutCardsClient({
       icon: headerIcon,
       content,
       accentClass: accentById?.[card.id],
+      tone,
     };
   });
 

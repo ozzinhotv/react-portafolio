@@ -30,7 +30,8 @@ export default async function AboutMe() {
         } as React.CSSProperties
       }
     >
-      <HeaderInline intro={data.intro}/>
+      <HeaderInline intro={data.intro} />
+
       <div
         className={[
           "grid grid-cols-1 gap-8 justify-items-center",

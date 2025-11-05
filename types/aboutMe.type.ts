@@ -1,7 +1,18 @@
+// types/aboutMe.type.ts
+import React from "react"; // asegúrate de tener esto para React.ReactNode
+
 export type AboutIntro = {
   title?: string;
   highlight?: string;
   subtitle?: string;
+};
+
+// ⬇️ NUEVO: tipo para los tonos (clases tailwind)
+export type Tone = {
+  text: string;        // ej: "text-sky-300"
+  icon: string;        // ej: "text-sky-300"
+  border: string;      // ej: "border-sky-400/40"
+  borderHover: string; // ej: "hover:border-sky-400/40"
 };
 
 export type TextCard = {
@@ -54,6 +65,7 @@ export type AboutItem = {
   icon?: string;
   content?: React.ReactNode;
   accentClass?: string;
+  tone?: Tone;            // ⬅️ NUEVO (opcional)
 };
 
 export type AboutCardProps = {
@@ -62,6 +74,8 @@ export type AboutCardProps = {
   open: boolean;
   compactSiblings: boolean;
   onHover: () => void;
+  onClick?: () => void;      // ← NUEVO: click/tap en móvil
   children?: React.ReactNode;
   accentClass?: string;
+  tone?: Tone;
 };
